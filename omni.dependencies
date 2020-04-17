@@ -1,0 +1,14 @@
+[
+  {
+    "remote":"github",
+    "repository": "TeamWin/android_device_qcom_common",
+    "target_path": "device/qcom/common",
+    "revision":"android-9.0"
+  },
+    {
+    "remote":"github",
+    "repository": "scarymen1325/bootable_recovery_gui_theme_portrait-hdpi-notch",
+    "target_path": "bootable/recovery/gui/theme/portrait_hdpi_notch",
+    "revision":"master"
+  },
+]
