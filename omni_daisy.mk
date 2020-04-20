@@ -67,10 +67,6 @@ PRODUCT_STATIC_BOOT_CONTROL_HAL := \
 PRODUCT_PACKAGES += \
     charger_res_images \
     charger
-
-# ROM fstab
-PRODUCT_COPY_FILES += \
-  device/xiaomi/daisy/rootdir/root/fstab.qcom:root/fstab.qcom
 	
 # Partitions (listed in the file) to be wiped under recovery.
 TARGET_RECOVERY_WIPE := \

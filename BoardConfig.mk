@@ -125,8 +125,6 @@ TW_SCREEN_BLANK_ON_BOOT := true
 TW_USE_TOOLBOX := true
 TW_EXCLUDE_TWRPAPP := true
 TW_INCLUDE_REPACKTOOLS := true
-USE_RECOVERY_INSTALLER := true
-RECOVERY_INSTALLER_PATH := device/xiaomi/daisy/installer
 TW_DEVICE_VERSION := by @ScaryMen1325
 
 # Asian region languages
