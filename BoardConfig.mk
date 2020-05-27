@@ -109,7 +109,8 @@ else
 endif
 
 # TWRP specific build flags
-TARGET_OTA_ASSERT_DEVICE := daisy,daisy_sprout
+RECOVERY_VARIANT := twrp
+TARGET_OTA_ASSERT_DEVICE := daisy
 RECOVERY_SDCARD_ON_DATA := true
 TARGET_RECOVERY_QCOM_RTC_FIX := true
 TW_BRIGHTNESS_PATH := "/sys/class/leds/lcd-backlight/brightness"
@@ -117,7 +118,7 @@ TW_EXCLUDE_DEFAULT_USB_INIT := true
 TW_EXCLUDE_SUPERSU := true
 AB_OTA_UPDATER := true
 TW_INPUT_BLACKLIST := "hbtp_vm"
-TW_THEME := portrait_hdpi_notch
+TW_THEME := portrait_hdpi
 TARGET_RECOVERY_DEVICE_MODULES += android.hardware.boot@1.0
 TARGET_USE_CUSTOM_LUN_FILE_PATH := /config/usb_gadget/g1/functions/mass_storage.0/lun.%d/file
 TARGET_RECOVERY_PIXEL_FORMAT := "RGBA_8888"
@@ -125,7 +126,7 @@ TW_SCREEN_BLANK_ON_BOOT := true
 TW_USE_TOOLBOX := true
 TW_EXCLUDE_TWRPAPP := true
 TW_INCLUDE_REPACKTOOLS := true
-TW_DEVICE_VERSION := by @ScaryMen1325
+TW_NO_SCREEN_BLANK := true
 
 # Asian region languages
 TW_EXTRA_LANGUAGES := true
@@ -138,3 +139,24 @@ TW_EXTRA_LANGUAGES := true
 # Workaround for error copying vendor files to recovery ramdisk
 BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE := ext4
 TARGET_COPY_OUT_VENDOR := vendor
+
+#Ignore Missing Dependencies
+ALLOW_MISSING_DEPENDENCIES=true
+
+
+#SHRP_Variables
+SHRP_EXPRESS := true
+SHRP_PATH := device/xiaomi/daisy
+SHRP_MAINTAINER := scarymen1325
+SHRP_DEVICE_CODE := daisy
+SHRP_EDL_MODE := 1
+SHRP_FLASH := 1
+SHRP_EXTERNAL := /external_sd
+SHRP_INTERNAL := /sdcard
+SHRP_OTG := /usbotg
+SHRP_AB := true
+SHRP_REC_TYPE := Treble
+SHRP_DEVICE_TYPE := A/B
+SHRP_FLASH := 1
+SHRP_STATUSBAR_RIGHT_PADDING := 40
+SHRP_STATUSBAR_LEFT_PADDING := 40
